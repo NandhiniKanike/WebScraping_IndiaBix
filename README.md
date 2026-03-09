@@ -53,4 +53,38 @@ The generated dataset is stored in a CSV file containing the following columns:
 * Implement logging for better monitoring.
 * Add automated duplicate detection.
 * Build a dataset preprocessing pipeline for machine learning applications.
-
+# IndiaBix Aptitude Scraper
+## Overview
+This project is a Python-based web scraper that collects aptitude questions from the IndiaBix website.
+It uses **Selenium WebDriver** to automate the browser and extract questions, options, and correct answers from different aptitude topics.
+The scraped data is stored in a **CSV file** for easy analysis and practice.
+## Features
+* Scrapes aptitude questions from IndiaBix
+* Extracts:
+  * Question
+  * Options (A, B, C, D)
+  * Correct Answer
+* Handles pagination automatically
+* Stores data in CSV format
+* Includes delays to mimic human browsing and avoid blocking
+## Technologies Used
+* Python
+* Selenium
+* CSV
+* Chrome WebDriver
+## Data Representation
+The scraped data is stored in a **CSV file** with the following columns:
+| Column Name    | Description                         |
+| -------------- | ----------------------------------- |
+| Topic          | Name of the aptitude topic          |
+| Question       | The aptitude question text          |
+| Option A       | First answer choice                 |
+| Option B       | Second answer choice                |
+| Option C       | Third answer choice                 |
+| Option D       | Fourth answer choice                |
+| Correct Answer | The correct option for the question |
+## Future Improvements
+*Extend the scraper to collect data from all aptitude categories and topics available on the website.
+*Add support for exporting data in multiple formats such as Excel and JSON.
+*Implement error handling and logging to track scraping progress and failures.
+*Store the scraped data in a database like MySQL or SQLite instead of only CSV.
