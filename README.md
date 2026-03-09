@@ -19,6 +19,7 @@ The generated dataset is stored in a CSV file containing the following columns:
 | -------------- | ----------------------------------------------- |
 | chart-type     | Topic or sub-topic of the question              |
 | page_number    | Page number from which the question was scraped |
+| chart_imgae_url| Images of particular chart type                 |
 | question       | The aptitude question text                      |
 | option_a       | First answer option                             |
 | option_b       | Second answer option                            |
