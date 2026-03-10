@@ -17,15 +17,16 @@ The generated dataset is stored in a CSV file containing the following columns:
 
 | Column Name    | Description                                     |
 | -------------- | ----------------------------------------------- |
-| chart-type     | Topic or sub-topic of the question              |
-| page_number    | Page number from which the question was scraped |
-| chart_imgae_url| Images of particular chart type                 |
-| question       | The aptitude question text                      |
-| option_a       | First answer option                             |
-| option_b       | Second answer option                            |
-| option_c       | Third answer option                             |
-| option_d       | Fourth answer option                            |
-| correct_answer | The correct option for the question             |
+| Section        | Which module it belongs to              |
+| TopicName      | Topic or sub-topic of the question              |
+| PageNumber     | Page number from which the question was scraped |
+| ImageURL       | Images of particular chart type                 |
+| Question       | The aptitude question text                      |
+| Option_A       | First answer option                             |
+| Option_B       | Second answer option                            |
+| Option_C       | Third answer option                             |
+| Option_D       | Fourth answer option                            |
+| CorrectAnswer | The correct option for the question             |
 ## Technologies Used
 * **Python** – Core programming language
 * **Selenium WebDriver** – Browser automation for scraping dynamic content
@@ -75,15 +76,18 @@ The scraped data is stored in a **CSV file** for easy analysis and practice.
 * Chrome WebDriver
 ## Data Representation
 The scraped data is stored in a **CSV file** with the following columns:
-| Column Name    | Description                         |
-| -------------- | ----------------------------------- |
-| Topic          | Name of the aptitude topic          |
-| Question       | The aptitude question text          |
-| Option A       | First answer choice                 |
-| Option B       | Second answer choice                |
-| Option C       | Third answer choice                 |
-| Option D       | Fourth answer choice                |
-| Correct Answer | The correct option for the question |
+| Column Name    | Description                                     |
+| -------------- | ----------------------------------------------- |
+| Section        | Which module it belongs to                      |
+| TopicName      | Topic or sub-topic of the question              |
+| PageNumber     | Page number from which the question was scraped |
+| ImageURL       |If image present store url or store null         |
+| Question       | The aptitude question text                      |
+| Option_A       | First answer option                             |
+| Option_B       | Second answer option                            |
+| Option_C       | Third answer option                             |
+| Option_D       | Fourth answer option                            |
+| CorrectAnswer | The correct option for the question             |
 ## Future Improvements
 *Extend the scraper to collect data from all aptitude categories and topics available on the website.
 *Add support for exporting data in multiple formats such as Excel and JSON.
