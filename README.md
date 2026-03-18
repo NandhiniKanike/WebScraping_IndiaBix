@@ -93,3 +93,56 @@ The scraped data is stored in a **CSV file** with the following columns:
 *Add support for exporting data in multiple formats such as Excel and JSON.
 *Implement error handling and logging to track scraping progress and failures.
 *Store the scraped data in a database like MySQL or SQLite instead of only CSV.
+## IndiaBix Data Interpretation Scraper with MySQL Storage
+## Description
+This project is a web scraping tool built using Python and Selenium to extract Data Interpretation questions, options, answers, and explanations from the IndiaBix website. The scraped data is stored directly into a MySQL database without using intermediate CSV files.
+## Features
+Automated web scraping using Selenium
+Extracts questions, options, correct answers, and explanations
+Stores data directly into MySQL database
+Configurable base URL for different topics
+Structured and clean data storage
+## Technologies Used
+Python
+Selenium
+MySQL
+SQLAlchemy 
+## Requirements
+Make sure you have the following installed:
+Python 3.x
+Google Chrome browser
+ChromeDriver (compatible with your Chrome version)
+MySQL Server
+## Installation
+Clone the repository:
+git clone <your-repo-link>
+cd <project-folder>
+Install required Python packages:
+pip install selenium mysql-connector-python sqlalchemy
+Download and set up ChromeDriver:
+Place ChromeDriver in your project folder or system PATH
+## Configuration
+Update the following in your script:
+BASE_URL → Target IndiaBix topic URL
+## MySQL credentials:
+host="localhost"
+user="root"
+password="your_password"
+database="your_database"
+## Usage
+Run the script:
+python your_script_name.py
+The scraper will:
+## Open the website
+Extract data page by page
+Store it directly into the MySQL database
+Database Structure
+## Example table fields:
+id
+question
+option_a
+option_b
+option_c
+option_d
+answer
+explanation
